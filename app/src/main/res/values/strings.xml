@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">UoW</string>
+
+    <string name="string_menu_share">share</string>
+
+    <string name="string_button_start">start</string>
+    <string name="string_textview_title">Title</string>
+    <string name="string_textview_content">Content</string>
+
+</resources>
