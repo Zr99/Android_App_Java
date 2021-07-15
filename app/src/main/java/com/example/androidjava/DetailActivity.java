@@ -1,7 +1,6 @@
 package com.example.androidjava;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -13,14 +12,13 @@ public class DetailActivity extends AppCompatActivity {
 
     /**
      * OnCreate: this method is called as part of the Android Lifecycle
-     * You will add majority of your code here, after activity_detail.xml has been inflated
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        // ADD YOUR CODE HERE (APART FROM FOR SHARING)
+        
         //Create the intent and position
         Intent intent = getIntent();
         int position = intent.getIntExtra("position", -1);
@@ -60,7 +58,6 @@ public class DetailActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menu_share:
-                // THIS IS WHERE YOU WILL ADD YOUR CODE FOR SHARING
                 //Create an intent and set the action and the type
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_SEND);
