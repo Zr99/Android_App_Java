@@ -9,19 +9,16 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-
 public class ListActivity extends AppCompatActivity {
 
     /**
      * OnCreate: this method is called as part of the Android Lifecycle
-     * You will add your code here, after activity_list.xml has been inflated
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
-        // ADD YOUR CODE HERE
         //Create a string array
         String[] item = getResources().getStringArray(R.array.string_array_titles);
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, item);
